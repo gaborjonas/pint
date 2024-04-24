@@ -21,6 +21,7 @@ class SummaryOutput
      */
     protected $presets = [
         'per' => 'PER',
+        'per2.0' => 'PER 2.0',
         'psr12' => 'PSR 12',
         'laravel' => 'Laravel',
         'symfony' => 'Symfony',

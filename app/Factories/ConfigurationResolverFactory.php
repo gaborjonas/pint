@@ -19,6 +19,7 @@ class ConfigurationResolverFactory
     public static $presets = [
         'laravel',
         'per',
+        'per2.0',
         'psr12',
         'symfony',
     ];

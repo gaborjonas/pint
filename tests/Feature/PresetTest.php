@@ -32,6 +32,17 @@ it('may use the PER preset', function () {
         ->toContain('── PER');
 });
 
+it('may use the PER 2.0 preset', function () {
+    [$statusCode, $output] = run('default', [
+        'path' => base_path('tests/Fixtures/without-issues'),
+        '--preset' => 'per2.0',
+    ]);
+
+    expect($statusCode)->toBe(0)
+        ->and($output)
+        ->toContain('── PER');
+});
+
 it('may use the Laravel preset', function () {
     [$statusCode, $output] = run('default', [
         'path' => base_path('tests/Fixtures/without-issues'),
